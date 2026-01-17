@@ -6,9 +6,14 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Ebonje/2028.git
+    repoURL: https://github.com/yannicknick08
     targetRevision: HEAD
-    path: "2028"
+    path: "."
   destination:
     server: https://kubernetes.default.svc
     namespace: default
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true  
+       
