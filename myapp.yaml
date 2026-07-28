@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-deploy
+  name: mywebapp-deploy
   namespace: default
   labels:
     app: green-app
@@ -19,4 +19,4 @@ spec:
       - name: green-app
         image: ebonje/nginx:version1
         ports:
-        - containerPort: 80
+          - containerPort: 80
